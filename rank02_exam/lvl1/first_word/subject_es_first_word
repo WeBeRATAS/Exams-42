@@ -1,0 +1,30 @@
+Nombre de la tarea : first_word
+Ficheros esperados : first_word.c
+Funciones permitidas: write
+--------------------------------------------------------------------------------
+
+Escribe un programa que tome una cadena y muestre su primera palabra, seguida de una
+línea nueva.
+
+Una palabra es una sección de la cadena delimitada por espacios/tabs o por el inicio/final de la cadena.
+la cadena.
+
+Si el número de parámetros no es 1, o si no hay palabras, simplemente muestra
+una nueva línea.
+
+
+Ejemplos:
+
+$> ./primera_palabra «PARA PONY» | cat -e
+PARA$
+$> ./primera_palabra «esto... es sparta, luego otra vez, tal vez no» | cat -e
+esto$
+$> ./primera_palabra « » | cat -e
+$
+$> ./primera_palabra «a» «b» | cat -e
+$
+$> ./primera_palabra « lorem,ipsum » | cat -e
+lorem,ipsum$
+$>
+
+

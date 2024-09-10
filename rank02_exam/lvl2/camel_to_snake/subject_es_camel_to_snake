@@ -1,0 +1,21 @@
+Nombre de la tarea : camel_to_snake
+Ficheros esperados : camel_to_snake.c
+Funciones permitidas: malloc, realloc, write
+--------------------------------------------------------------------------------
+
+Escribe un programa que tome una cadena en formato lowerCamelCase
+y la convierta en una cadena en formato snake_case.
+
+Una cadena lowerCamelCase es una cadena en la que cada palabra empieza por mayúscula
+excepto la primera.
+
+Una cadena snake_case es una cadena en la que cada palabra está en minúsculas, separadas por
+un guión bajo «_».
+
+Ejemplos:
+$>./camello_a_serpiente «hereIsACamelCaseWord»
+here_is_a_camel_case_word
+$>./camel_to_snake «holaMundo» | cat -e
+hola_mundo$
+$>./camel_to_snake | cat -e
+$

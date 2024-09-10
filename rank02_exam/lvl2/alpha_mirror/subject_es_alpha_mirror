@@ -1,0 +1,27 @@
+Nombre de la tarea : alpha_mirror
+Ficheros esperados : alpha_mirror.c
+Funciones permitidas: write
+--------------------------------------------------------------------------------
+
+Escribe un programa llamado alpha_mirror que tome una cadena y muestre esta cadena
+después de reemplazar cada carácter alfabético por el carácter alfabético opuesto
+opuesto, seguido de una nueva línea.
+
+'a' se convierte en 'z', 'Z' se convierte en 'A'
+d se convierte en w, M en N
+
+y así sucesivamente.
+
+Las mayúsculas y minúsculas no se modifican.
+
+Si el número de argumentos no es 1, sólo se muestra una nueva línea.
+
+Ejemplos:
+
+$>./alpha_mirror «abc»
+zyx
+$>./alpha_mirror «Mi caballo es asombroso». | cat -e
+Nb slihv rh Znzarmt.$
+$>./alpha_mirror | cat -e
+$
+$>
