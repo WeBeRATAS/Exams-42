@@ -5,30 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbuitrag <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/29 14:20:24 by rbuitrag          #+#    #+#             */
-/*   Updated: 2024/08/29 14:45:20 by rbuitrag         ###   ########.fr       */
+/*   Created: 2024/09/10 11:40:04 by rbuitrag          #+#    #+#             */
+/*   Updated: 2024/09/10 11:53:17 by rbuitrag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	int	i;
+	int		i;
+	char	*s;
 
 	if (ac == 2)
 	{
+		s = av[1];
 		i = 0;
-		while (av[1][i])
+		while (s[i])
 		{
-			if (av[1][i] >= 'A' && av[1][i] <= 'Z')
+			if (s[i] >= 'A' && s[i] <= 'Z')
 			{
-				av[1][i] += 32;
+				s[i] = s[i] + 32;
 				write (1, "_", 1);
 			}
-			write (1, &av[1][i], 1);
+			write (1, &s[i], 1);
 			i++;
 		}
 	}
 	write (1, "\n", 1);
+	return (0);
 }
