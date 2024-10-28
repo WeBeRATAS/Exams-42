@@ -1,11 +1,11 @@
 #include <unistd.h>
 
-int main (int ac, char **av)
+int	main(int ac, char **av)
 {
 	int i;
-	int blanks;
+	int cont_spaces;
 
-	blanks = 0;
+	cont_spaces = 0;
 	if (ac == 2)
 	{
 		i = 0;
@@ -14,17 +14,17 @@ int main (int ac, char **av)
 		while (av[1][i])
 		{
 			if (av[1][i] == ' ' || av[1][i] == '\t')
-				blanks = 1;
+				cont_spaces = 1;
 			if (!(av[1][i] == ' ' || av[1][i] == '\t'))
 			{
-				if (blanks)
+				if (cont_spaces)
 					write (1, " ", 1);
-				blanks = 0;
-				write (1, &av[1][i], 1);
+				write (1, &(av[1][i]), 1);
+				cont_spaces = 0;
 			}
 			i++;
 		}
 	}
-	write (1, "\n", 1);
+	write(1, "\n", 1);
 	return (0);
 }
