@@ -55,7 +55,7 @@ int	exec(char **av, int i, char **env)
 			print_error("error: fatal 02\n"), exit(1);
 		if (!pid)
 		{
-			av = 0;
+			av[i] = 0;
 			set_pipe(has_pipe, fd, 1);
 			if (!strcmp(*av, "cd"))
 				exit (cd(av, i));
